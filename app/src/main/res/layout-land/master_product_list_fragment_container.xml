@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/masterContainer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".master_detail.MasterProductListFragmentContainer">
+
+    <fragment
+        android:id="@+id/masterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="net.bintelligence.backeryapp.master_detail.MasterProductListFragment"
+        tools:layout="@layout/master_product_list_fragment"
+        android:layout_weight="2"/>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="net.bintelligence.backeryapp.master_detail.DetailTabContainerFragment"
+        tools:layout="@layout/detail_tab_container_fragment"
+        android:layout_weight="1"/>
+</LinearLayout>

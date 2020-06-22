@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/masterProductListFragment">
+
+    <fragment
+        android:id="@+id/masterProductListFragment"
+        android:name="net.bintelligence.backeryapp.master_detail.MasterProductListFragmentContainer"
+        android:label="master_product_list_fragment"
+        tools:layout="@layout/master_product_list_fragment_container" >
+        <action
+            android:id="@+id/action_masterProductListFragment_to_detailTabContainerFragment"
+            app:destination="@id/detailTabContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProcessProductListFragment"
+        android:name="net.bintelligence.backeryapp.master_detail.DetailProcessProductListFragment"
+        android:label="detail_process_product_list_fragment"
+        tools:layout="@layout/detail_process_product_list_fragment" />
+
+    <fragment
+        android:id="@+id/detailTabContainerFragment"
+        android:name="net.bintelligence.backeryapp.master_detail.DetailTabContainerFragment"
+        android:label="detail_tab_container_fragment"
+        tools:layout="@layout/detail_tab_container_fragment" />
+
+
+</navigation>

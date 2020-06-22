@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Backery App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_product_name">FELIPE</string>
+    <string name="txtSupplyTab">Insumos</string>
+    <string name="txtProessTab">Procedimiento</string>
+    <string name="txtTabSupplyList">Insumos</string>
+    <string name="txtTabProcessList">Proceso</string>
+    <string name="txt_button_start">Comenzar Proceso</string>
+    <string name="txt_supply_name">HARINA 00000</string>
+    <string name="help_text_input_production_quantity">Ingresa la cantidad a producir</string>
+    <string name="txt_suplly_quantity">1</string>
+    <string name="txt_supply_unit">KILOGRAMO</string>
+    <string name="txt_process_name">AMASADO</string>
+    <string name="txt_process_quantity">20</string>
+    <string name="txt_process_unit">MINUTO</string>
+    <string name="txt_product_list_tittle">Lista de Productos</string>
+    <string name="txt_product_list_tittle_land">Productos</string>
+</resources>

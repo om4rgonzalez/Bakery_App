@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="img_item_size">40dp</dimen>
+    <dimen name="img_size_large_with">100dp</dimen>
+    <dimen name="img_size_large_height_2">56dp</dimen>
+    <dimen name="img_size_3x_large">114dp</dimen>
+    <dimen name="img_size_large_height">114dp</dimen>
+    <dimen name="img_item_medium_size">30dp</dimen>
+    <dimen name="item_img_height">128dp</dimen>
+    <dimen name="img_small">24dp</dimen>
+    <dimen name="img_card_product">80dp</dimen>
+    <dimen name="button_add_with">30dp</dimen>
+    <dimen name="button_add_height">20dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="main_padding_small">4dp</dimen>
+    <dimen name="app_bar_height">220dp</dimen>
+    <dimen name="imageView_margin">2dp</dimen>
+    <dimen name="imageView_inset">-4dp</dimen>
+    <dimen name="imageView_radius">18dp</dimen>
+    <dimen name="item_height_threeLine">88dp</dimen>
+    <dimen name="item_padding_vertical">16dp</dimen>
+    <dimen name="item_padding_vertical_thirt_line">25dp</dimen>
+    <dimen name="item_padding_horizontal">16dp</dimen>
+    <dimen name="item_text_size_secondary">12sp</dimen>
+    <dimen name="circle_radius">28dp</dimen>
+    <dimen name="circle_radius_small">10dp</dimen>
+
+
+    <dimen name="common_padding_nano">2dp</dimen>
+    <dimen name="common_padding_micro">4dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_default_">13dp</dimen>
+    <dimen name="common_padding_top">16dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="common_padding_middle_2">32dp</dimen>
+    <dimen name="common_padding_bottom_scroll">64dp</dimen>
+    <dimen name="common_padding_large">100dp</dimen>
+    <dimen name="common_padding_bottom_card">12dp</dimen>
+
+    <dimen name="card_img_size">80dp</dimen>
+    <dimen name="card_baseline_topTitle">44dp</dimen>
+    <dimen name="card_baseline_ratingBar">24dp</dimen>
+    <dimen name="card_baseline_secondary">32dp</dimen>
+    <dimen name="card_baseline_message">26dp</dimen>
+    <dimen name="card_baseline_subtitle">36dp</dimen>
+    <dimen name="card_padding_container_variant">14dp</dimen>
+    <dimen name="card_padding_container_variant2">20dp</dimen>
+
+    <dimen name="max_number_text_line_adress">2</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="item_button_next">150dp</dimen>
+</resources>
