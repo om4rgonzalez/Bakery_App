@@ -1,6 +1,8 @@
 package net.bintelligence.backeryapp.io;
 
 import net.bintelligence.backeryapp.pojo.ProductResponse;
+import net.bintelligence.backeryapp.pojo.ProductionRequest;
+import net.bintelligence.backeryapp.pojo.StandarResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -31,9 +33,9 @@ public interface RetrofitApiService {
 ////    @POST("auth/login/v1")
 ////    Call<LoginResponse> login(@Field("email") String email, @Field("password") String password);
 ////
-//    //@FormUrlEncoded
-//    @POST("/pedido/")
-//    Call<StandarResponse> nuevoPedido(@Body() PedidoRequest pedidoRequest);
+    //@FormUrlEncoded
+    @POST("/production/")
+    Call<StandarResponse> nuevoPedido(@Body() ProductionRequest productionRequest );
 //
 //    /////////////// llamadas al api gateway ///////////////
 //    @FormUrlEncoded
