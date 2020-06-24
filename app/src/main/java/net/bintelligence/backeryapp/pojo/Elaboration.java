@@ -7,6 +7,7 @@ public class Elaboration {
     private String elaborationName;
     private ArrayList<Process> process;
     private ArrayList<Supply> supplies;
+    private String elaborationUnit;
 
     public int getElaborationId() {
         return elaborationId;
@@ -38,5 +39,13 @@ public class Elaboration {
 
     public void setSupplies(ArrayList<Supply> supplies) {
         this.supplies = supplies;
+    }
+
+    public String getElaborationUnit() {
+        return elaborationUnit;
+    }
+
+    public void setElaborationUnit(String elaborationUnit) {
+        this.elaborationUnit = elaborationUnit;
     }
 }

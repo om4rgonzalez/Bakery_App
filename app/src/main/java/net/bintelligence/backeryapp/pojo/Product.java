@@ -8,6 +8,15 @@ public class Product implements Serializable {
     private String productName;
     private String description;
     private ArrayList<Elaboration> elaborations;
+    private String unitType;
+
+    public String getUnitType() {
+        return unitType;
+    }
+
+    public void setUnitType(String unitType) {
+        this.unitType = unitType;
+    }
 
     public int getProductId() {
         return productId;

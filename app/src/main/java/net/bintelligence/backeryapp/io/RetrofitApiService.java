@@ -21,6 +21,10 @@ public interface RetrofitApiService {
 //
     @GET("/products")
     Call<ProductResponse> getProducts();
+
+    @POST("/production/")
+    Call<StandarResponse> startProduction(@Body() ProductionRequest production );
+
 //
 //    @GET("/productos/")
 //    Call<ProductoResponse> getProductos(@Query("id_usuario") int id_usuario);
@@ -33,9 +37,6 @@ public interface RetrofitApiService {
 ////    @POST("auth/login/v1")
 ////    Call<LoginResponse> login(@Field("email") String email, @Field("password") String password);
 ////
-    //@FormUrlEncoded
-    @POST("/production/")
-    Call<StandarResponse> nuevoPedido(@Body() ProductionRequest productionRequest );
 //
 //    /////////////// llamadas al api gateway ///////////////
 //    @FormUrlEncoded

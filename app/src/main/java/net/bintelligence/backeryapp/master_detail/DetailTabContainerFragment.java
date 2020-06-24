@@ -1,5 +1,7 @@
 package net.bintelligence.backeryapp.master_detail;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
@@ -117,6 +119,25 @@ public class DetailTabContainerFragment extends Fragment {
         });
         binding.txtProductionQuantity.getEditText().setText("1");
         productViewModel.calculateSuppliesForProduction(Double.parseDouble(binding.txtProductionQuantity.getEditText().getText().toString()));
+        binding.btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                productViewModel.startProduction(Double.parseDouble(binding.txtProductionQuantity.getEditText().getText().toString()));
+
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getContext());
+                alertDialogBuilder.setTitle(getString(R.string.txt_dialog_start_production_header));
+                alertDialogBuilder
+                        .setMessage(R.string.txt_dialog_start_production_body)
+                        .setCancelable(false)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                            }
+                        });
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                // Mostrar alert
+                alertDialog.show();
+            }
+        });
 
         return binding.getRoot();
     }

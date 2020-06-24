@@ -23,10 +23,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_supply_name"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/common_padding_min"
                 android:layout_marginStart="@dimen/common_padding_default"
                 android:layout_marginLeft="@dimen/common_padding_default" />
             <TextView
@@ -34,21 +33,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_suplly_quantity"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 app:layout_constraintStart_toStartOf="@id/txtSupplyName"
                 app:layout_constraintTop_toBottomOf="@id/txtSupplyName"
                 android:layout_marginStart="@dimen/common_padding_default"
-                android:layout_marginTop="@dimen/common_padding_min"
                 android:layout_marginLeft="@dimen/common_padding_default" />
             <TextView
                 android:id="@+id/txtSupplyUnit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txt_supply_unit"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
                 app:layout_constraintStart_toEndOf="@id/txtSupplyQuantity"
                 app:layout_constraintTop_toBottomOf="@id/txtSupplyName"
-                android:layout_marginTop="@dimen/common_padding_min"
                 android:layout_marginStart="@dimen/common_padding_min"
                 android:layout_marginLeft="@dimen/common_padding_min" />
         </androidx.constraintlayout.widget.ConstraintLayout>

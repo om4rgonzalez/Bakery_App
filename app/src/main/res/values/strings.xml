@@ -17,4 +17,7 @@
     <string name="txt_process_unit">MINUTO</string>
     <string name="txt_product_list_tittle">Lista de Productos</string>
     <string name="txt_product_list_tittle_land">Productos</string>
+    <string name="btn_start_production">Iniciar Producción</string>
+    <string name="txt_dialog_start_production_header">Proceso Iniciado</string>
+    <string name="txt_dialog_start_production_body">Se ha registrado el inicio del proceso de producción y los materiales consumidos.</string>
 </resources>

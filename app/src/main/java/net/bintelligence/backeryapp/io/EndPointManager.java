@@ -11,13 +11,16 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 
 import net.bintelligence.backeryapp.master_detail.viewmodel.ProductViewModel;
+import net.bintelligence.backeryapp.pojo.Product;
 import net.bintelligence.backeryapp.pojo.ProductResponse;
+import net.bintelligence.backeryapp.pojo.ProductionRequest;
+import net.bintelligence.backeryapp.pojo.StandarResponse;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class EndPoint {
+public class EndPointManager {
 
     public static void getProducts(ProductViewModel viewModel){
         Call<ProductResponse> call = RetrofitApiAdapter.getApiService().getProducts();
@@ -33,6 +36,19 @@ public class EndPoint {
             @Override
             public void onFailure(Call<ProductResponse> call, Throwable t) {
                 viewModel.setProductResponseMutableLiveData(null);
+            }
+        });
+    }
+
+    public static void startProduction(ProductionRequest productionRequest){
+        Call<StandarResponse> call = RetrofitApiAdapter.getApiService().startProduction(productionRequest);
+        call.enqueue(new Callback<StandarResponse>() {
+            @Override
+            public void onResponse(Call<StandarResponse> call, Response<StandarResponse> response) {
+            }
+
+            @Override
+            public void onFailure(Call<StandarResponse> call, Throwable t) {
             }
         });
 
